@@ -2,11 +2,13 @@ package com.example.coursework_2.Service;
 
 import com.example.coursework_2.Entities.Question;
 import com.example.coursework_2.Exception.InvalidQuestionRequestException;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+@Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService questionService;
 

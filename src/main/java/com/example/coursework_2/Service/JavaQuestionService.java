@@ -1,9 +1,11 @@
 package com.example.coursework_2.Service;
 
 import com.example.coursework_2.Entities.Question;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Service
 public class JavaQuestionService implements QuestionService {
     private final Set<Question> questions = new HashSet<>();
     private Random random = new Random();
